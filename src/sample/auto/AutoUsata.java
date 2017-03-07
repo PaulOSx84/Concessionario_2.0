@@ -10,7 +10,7 @@ public class AutoUsata extends Auto {
     private int km;
     private int anno;
 
-    public AutoUsata(String nome, String marca, int prezzo, int cilindrata, int km, int anno)
+    public AutoUsata(String nome, String marca, double prezzo, int cilindrata, int km, int anno)
     {
         super(nome, marca, prezzo, cilindrata);
         this.km = km;

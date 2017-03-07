@@ -1,10 +1,14 @@
+
 package sample;
+import sample.auto.*;
+import sample.proprietari.*;
+
 
 public class Main {
 
 
     public static void main(String[] args) {
-
+    	Demo one = new Demo();
     }
 }
 

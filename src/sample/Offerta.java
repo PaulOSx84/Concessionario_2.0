@@ -9,7 +9,7 @@ public class Offerta implements Stampable {
 
     private Auto autoDaComprare;
     private Proprietario acquirente;
-    private int prezzoOfferto;
+    private double prezzoOfferto;
 
     public Auto getAutoDaComprare() {
         return autoDaComprare;
@@ -19,11 +19,11 @@ public class Offerta implements Stampable {
         return acquirente;
     }
 
-    public int getPrezzoOfferto() {
+    public double getPrezzoOfferto() {
         return prezzoOfferto;
     }
 
-    public Offerta(Auto daComprare, Proprietario acquirente, int prezzoOfferto)
+    public Offerta(Auto daComprare, Proprietario acquirente, double prezzoOfferto)
     {
         this.autoDaComprare = daComprare;
         this.acquirente = acquirente;
@@ -35,9 +35,9 @@ public class Offerta implements Stampable {
     {
         Utility.stampaCornicetta();
         System.out.println("Offerta per: ");
-        this.autoDaComprare.stampaInfo();
+        System.out.println(this.autoDaComprare.getNome()+" "+this.autoDaComprare.getMarca()+" cil. "+this.autoDaComprare.getCilindrata()+" "+this.autoDaComprare.getPrezzo()+"€");
         System.out.println("Offerta da parte di: ");
-        this.acquirente.stampaInfo();
+        System.out.println(this.acquirente.getNome());
         System.out.println("Prezzo: " + this.prezzoOfferto);
         Utility.stampaCornicetta();
     }

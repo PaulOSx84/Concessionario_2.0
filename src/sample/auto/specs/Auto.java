@@ -9,10 +9,10 @@ public abstract class Auto implements Stampable
 
     private String nome;
     private String marca;
-    private int prezzo;
+    private double prezzo;
     private int cilindrata;
 
-    public Auto(String nome, String marca, int prezzo, int cilindrata)
+    public Auto(String nome, String marca, double prezzo, int cilindrata)
     {
         this.nome = nome;
         this.marca = marca;
@@ -28,7 +28,7 @@ public abstract class Auto implements Stampable
         return marca;
     }
 
-    public int getPrezzo() {
+    public double getPrezzo() {
         return prezzo;
     }
 
@@ -36,7 +36,7 @@ public abstract class Auto implements Stampable
         return cilindrata;
     }
 
-    public void setPrezzo(int prezzo) {
+    public void setPrezzo(double prezzo) {
         this.prezzo = prezzo;
     }
 
